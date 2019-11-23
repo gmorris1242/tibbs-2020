@@ -1,0 +1,19 @@
+%footer
+  .row
+    .column.lg-4.text-center.lg-text-left
+      %h3.heading.accent-color.fz-32.mb-2 Location
+      %p.copy.white
+        = link_to 'https://www.google.com/maps/place/72+Auburn+Ave,+Pontiac,+MI+48342/@42.6340492,-83.2903523,17z/data=!3m1!4b1!4m5!3m4!1s0x8824bfac1da244e9:0x5a7b71ebeaead48b!8m2!3d42.6340492!4d-83.2881636', target: '_blank' do
+          72 Auburn Ave.
+          %br
+          Pontiac, MI 48342
+    .column.lg-4.text-center.lg-text-left
+      %h3.heading.accent-color.fz-32.mb-2 Map
+      %p.copy.white= link_to 'Work', work_path
+      %p.copy.white= link_to 'Directors', directors_path
+      %p.copy.white= link_to 'Info', info_path
+      %p.copy.white= link_to 'Contact', info_path(anchor: 'contact')
+    .column.lg-4.text-center.lg-text-left
+      %h3.heading.accent-color.fz-32.mb-2 Social
+      %p.copy.white= link_to 'Instagram', 'https://www.instagram.com/tibbs_inc/', target: '_blank'
+      %p.copy.white= link_to 'Facebook', 'https://www.facebook.com/tibbsincorporated', target: '_blank'

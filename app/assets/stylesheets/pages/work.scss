@@ -1,0 +1,27 @@
+#work {
+  @include page-header;
+
+  .videos {
+    @include work-layout;
+  }
+}
+
+#video-player {
+  .video-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.4);
+
+    video {
+      width: 80%;
+      width: 80%;
+    }
+  }
+}

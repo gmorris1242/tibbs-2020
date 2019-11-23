@@ -1,0 +1,17 @@
+#info {
+  @include page-header;
+}
+
+#contact {
+  input,
+  textarea {
+    &:not(.btn) {
+      border: 1px solid #d8d8d8;
+      font-size: 16px;
+      padding: 5px;
+      display: inline-block;
+      font-family: $main-font;
+      width: 100%;
+    }
+  }
+}

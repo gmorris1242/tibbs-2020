@@ -1,0 +1,15 @@
+footer {
+  padding: 30px 0;
+  background: $copy;
+
+  p {
+    line-height: 2;
+
+    a {
+      color: $white;
+      transition: all 200ms linear;
+
+      &:hover { color: $accent; }
+    }
+  }
+}

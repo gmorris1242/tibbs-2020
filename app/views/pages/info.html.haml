@@ -1,0 +1,36 @@
+#info
+  %section.header
+    .row
+      .column
+        %h1.heading.fz-72.white Info
+
+  %section.studio
+    .row.pt-4.pb-4
+      .column.sm-12.lg-3.lg-offset-1
+        %h2.heading.copy-color.uppercase Studio
+      .column.sm-12.lg-8
+        %h2.heading.copy-color.fz-56 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    .row
+      .column.lg-6.pb-3= image_tag 'studio/studio10.jpg', class: 'width-100'
+      .column.lg-6.pb-3= image_tag 'studio/studio14.jpg', class: 'width-100'
+      .column.lg-8.lg-offset-4.pb-3
+        %p.copy.copy-color.fz-24 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      .column.pb-3.lg-6= image_tag 'studio/studio6.jpg', class: 'width-100'
+      .column.pb-3.lg-6= image_tag 'studio/studio1.jpg', class: 'width-100'
+
+  %section#contact.pb-3.pt-3
+    .row.mb-3
+      .column.sm-12.lg-3.lg-offset-1
+        %h2.heading.copy-color.uppercase Contact Us
+    = form_for :contact, url: contact_index_path, remote: true do |f|
+      = f.invisible_captcha :subtitle
+      .row
+        .column.md-5.md-offset-1
+          = f.text_field :name, placeholder: 'Name*', class: 'mt-1 mb-1', required: true
+        .column.md-5
+          = f.email_field :email, placeholder: 'Email*', class: 'mt-1 mb-1', required: true
+        .column.md-10.md-offset-1
+          = f.text_area :message, placeholder: 'Message*', class: 'mt-1 mb-1', required: true
+        .column
+          .text-center
+            = f.submit 'Send', class: 'btn orange'

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+
+$main-font: 'Alata', sans-serif;
+
+a,
+.copy,
+.heading,
+input { font-family: $main-font; }
+
+
+.fz-20 { font-size: 20px; }
+.fz-24 { font-size: 24px; }
+.fz-32 { font-size: 32px; }
+.fz-40 { font-size: 40px; }
+.fz-48 { font-size: 48px; }
+.fz-56 { font-size: 56px; }
+.fz-72 { font-size: 72px; }
+
+.heading {
+  line-height: 1.3;
+}

@@ -1,0 +1,12 @@
+#director
+  %section.header
+    .row
+      .column
+        %h1.heading.white= @director.first['name']
+
+  %section.content
+    .row.pt-3.pb-3.vert-center
+      .column.sm-12.lg-6.pb-1
+        = image_tag @director.first['img']
+      .column.sm-12.lg-6.pb-1
+        %p.copy.copy-color.fz-24= @director.first['bio']

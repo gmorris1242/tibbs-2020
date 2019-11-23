@@ -1,0 +1,35 @@
+@mixin work-layout {
+  .poster {
+    position: relative;
+    cursor: pointer;
+
+    .heading {
+      overflow: hidden;
+      transition: all 300ms ease-in-out;
+      width: 0;
+      top: 0;
+      bottom: 0;
+      background: $accent;
+      position: absolute;
+      font-size: 0;
+    }
+
+    &:hover {
+      .heading {
+        width: 100%;
+        padding-left: 32px;
+        font-size: 56px;
+      }
+    }
+  }
+}
+
+@mixin page-header {
+  .header {
+    height: 40vh;
+    min-height: 250px;
+    background: $accent;
+    display: flex;
+    align-items: flex-end;
+  }
+}

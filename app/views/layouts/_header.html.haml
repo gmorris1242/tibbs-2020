@@ -1,0 +1,19 @@
+%header
+  .row
+    .column
+      .logo
+        = link_to root_path do
+          = image_tag 'logos/logo_white.svg'
+      %nav
+        %button.hamburger.hamburger--spring.md-hide
+          %span.hamburger-box
+            %span.hamburger-inner
+        %ul
+          %li= link_to 'Work', work_path
+          %li= link_to 'Directors', directors_path
+          %li= link_to 'Info', info_path
+
+:javascript
+  $('.hamburger').click(function() {
+    $(this).toggleClass('is-active')
+  })

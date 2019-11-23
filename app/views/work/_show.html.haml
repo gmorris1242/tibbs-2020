@@ -1,0 +1,6 @@
+.video-wrapper
+  = video_tag @src || '#', controls: true, class: 'video', autoplay: true
+
+:javascript
+  $('.video-wrapper').click(function() { $(this).remove() })
+  $('video').click(function(e) { e.stopPropagation() })

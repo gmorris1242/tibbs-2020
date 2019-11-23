@@ -1,0 +1,52 @@
+#work
+  %section.header
+    .row
+      .column
+        %h1.heading.fz-72.white Our Work
+
+  %section.videos
+    .row.mt-3
+      .column.sm-12.md-6.mb-2.poster#rocket{ data: { url: 'https://tibbs-videos.s3.us-east-2.amazonaws.com/videos/rocket.mp4' } }
+        = image_tag 'work/my_chevy_is_a_rocket_poster.jpg'
+        %h3.heading.white.vert-center My Chevy is a Rocket
+      .column.sm-12.md-6.mb-2.poster#ram{ data: { url: 'https://tibbs-videos.s3.us-east-2.amazonaws.com/videos/ram.mp4' } }
+        = image_tag 'work/ram_poster.jpg'
+        %h3.heading.white.vert-center Ram
+      .column.sm-12.md-6.mb-2.poster#gymboree{ data: { url: 'https://tibbs-videos.s3.us-east-2.amazonaws.com/videos/gymboree.mp4' } }
+        = image_tag 'work/gymboree_poster.jpg'
+        %h3.heading.white.vert-center Gymboree
+      .column.sm-12.md-6.mb-2.poster#biolite{ data: { url: 'https://tibbs-videos.s3.us-east-2.amazonaws.com/videos/biolite.mp4' } }
+        = image_tag 'work/biolite_poster.jpg'
+        %h3.heading.white.vert-center Biolite
+      .column.sm-12.md-6.mb-2.poster#dr-daniels{ data: { url: 'https://tibbs-videos.s3.us-east-2.amazonaws.com/videos/bcbsm_2.mp4' } }
+        = image_tag 'work/bcbs_dr_daniels_poster.jpg'
+        %h3.heading.white.vert-center BCBS | Dr. Daniels
+      .column.sm-12.md-6.mb-2.poster#city-on-a-hill{ data: { url: 'https://tibbs-videos.s3.us-east-2.amazonaws.com/videos/bcbsm.mp4' } }
+        = image_tag 'work/bcbs_city_on_a_hill_poster.jpg'
+        %h3.heading.white.vert-center BCBS | City on a Hill
+
+#video-player
+
+:javascript
+    let src
+
+    function callVideo(src) {
+      $.ajax({
+        dataType: "script",
+        type:    "GET",
+        url:     "/video-player",
+        data:    { src: src },
+        success: function(post){ console.log('success') },
+        error:   function(post){ console.log('error') }
+      })
+    }
+
+    if (window.location.hash) {
+      src = $(window.location.hash).data('url')
+      callVideo(src)
+    }
+
+    $('.poster').click(function() {
+      src = $(this).data('url')
+      callVideo(src)
+    })
