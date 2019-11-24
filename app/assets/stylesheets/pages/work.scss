@@ -31,7 +31,7 @@
     right: 10px;
     font-size: 20px;
     cursor: pointer;
-    transform: color 300ms linear;
+    transition: color 300ms linear;
 
     &:hover { color: $accent; }
   }
