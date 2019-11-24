@@ -4,9 +4,9 @@
 
   %section.howdy.pt-4.pb-4
     .row
-      .column.sm-12.lg-3.lg-offset-1
+      .column.sm-12.lg-3.lg-offset-1(data-aos='fade-right')
         %h2.heading.copy-color.uppercase Howdy
-      .column.sm-12.lg-8
+      .column.sm-12.lg-8(data-aos='fade-left')
         %h2.heading.copy-color.fz-56 The goal is to engage. The challenge is to exceed expectations.
 
   %section.featured-work
@@ -14,41 +14,41 @@
       .column.text-center
         %h2.heading.accent-color.fz-32 Featured Work
     .row.mt-3
-      .column.sm-12.md-6.mb-2.poster
+      .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
         = link_to work_path(anchor: 'rocket') do
           = image_tag 'work/my_chevy_is_a_rocket_poster.jpg'
           %h3.heading.white.vert-center My Chevey is a Rocket
-      .column.sm-12.md-6.mb-2.poster
+      .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
         = link_to work_path(anchor: 'ram') do
           = image_tag 'work/ram_poster.jpg'
           %h3.heading.white.vert-center Ram
-      .column.sm-12.md-6.mb-2.poster
+      .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
         = link_to work_path(anchor: 'gymboree') do
           = image_tag 'work/gymboree_poster.jpg'
           %h3.heading.white.vert-center Gymboree
-      .column.sm-12.md-6.mb-2.poster
+      .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
         = link_to work_path(anchor: 'biolite') do
           = image_tag 'work/biolite_poster.jpg'
           %h3.heading.white.vert-center Biolite
-      .column.sm-12.md-6.mb-2.poster
+      .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
         = link_to work_path(anchor: 'dr-daniels') do
           = image_tag 'work/bcbs_dr_daniels_poster.jpg'
           %h3.heading.white.vert-center BCBS | Dr. Daniels
-      .column.sm-12.md-6.mb-2.poster
+      .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
         = link_to work_path(anchor: 'city-on-a-hill') do
           = image_tag 'work/bcbs_city_on_a_hill_poster.jpg'
           %h3.heading.white.vert-center BCBS | City on a Hill
 
   %section.full-page.studio.mt-4.vert-center
     .row
-      .column.lg-6.text-center.lg-text-left
+      .column.lg-6.text-center.lg-text-left(data-aos='fade-right')
         %h2.heading.white.fz-72 Studio
         %p.copy.white.fz-24 The newly renovated 1912 Duffey building offers two full-service edit bays, as well as complete client service provisions
         = link_to 'Learn More', info_path, class: 'btn white mt-2 mb-2'
 
   %section.full-page.directors.vert-center
     .row
-      .column.text-center
+      .column.text-center(data-aos='fade-up')
         %h2.heading.white.fz-72 Directors
         %p.copy.white.fz-24 Meet our team.
         = link_to 'Learn More', directors_path, class: 'btn white mt-2 mb-2'

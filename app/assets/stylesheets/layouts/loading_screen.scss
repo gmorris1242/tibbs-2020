@@ -1,0 +1,36 @@
+#loading-screen {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 400;
+  overflow: hidden;
+  transition: height 500ms ease-in-out;
+
+  &.loading {
+    height: 100%;
+  }
+
+  video {
+    width: 50%;
+    min-width: 300px;
+  }
+}
+
+main { transition: all 500ms ease-in-out; }
+
+#white-screen {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  transition: all 150ms ease-in-out;
+  top: 100%;
+  width: 100%;
+
+  &.loading { top: 0; }
+}

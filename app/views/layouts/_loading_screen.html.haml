@@ -1,0 +1,23 @@
+#loading-screen.loading
+  = video_tag '/videos/white_loading_screen.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+
+#white-screen
+
+:javascript
+  $('main').ready(function() {
+    const pageHeight = $('main').height()
+
+    $('main').css({
+      'position': 'relative',
+      'bottom': -pageHeight
+    })
+
+    setTimeout(function() {
+      $('#loading-screen').removeClass('loading')
+      $('main').css({'bottom': 0})
+    }, 1500)
+
+    $('a').click(function() {
+      $('#white-screen').addClass('loading')
+    })
+  })

@@ -18,8 +18,13 @@
   </head>
 
   <body>
+    <%= render 'layouts/loading_screen'%>
     <%= render 'layouts/header'%>
-    <%= yield %>
+    <main>
+
+      <%= yield %>
+
+    </main>
     <%= render 'layouts/footer'%>
   </body>
 </html>

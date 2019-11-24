@@ -9,6 +9,10 @@ require("@rails/activestorage").start()
 require("channels")
 require("custom/header")
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+$(document).ready(() => AOS.init())
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

@@ -1,4 +1,4 @@
-#director
+#director(data-router-view='director')
   %section.header
     .row
       .column
@@ -6,7 +6,7 @@
 
   %section.content
     .row.pt-3.pb-3.vert-center
-      .column.sm-12.lg-6.pb-1
+      .column.sm-12.lg-6.pb-1(data-aos='fade-right')
         = image_tag @director.first['img']
-      .column.sm-12.lg-6.pb-1
+      .column.sm-12.lg-6.pb-1(data-aos='fade-left')
         %p.copy.copy-color.fz-24= @director.first['bio']
