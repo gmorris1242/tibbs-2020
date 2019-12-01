@@ -2,11 +2,14 @@
 
 $main-font: 'Alata', sans-serif;
 
+// @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+//
+// $main-font: 'Bebas Neue', sans-serif;
+
 a,
 .copy,
 .heading,
 input { font-family: $main-font; }
-
 
 .fz-20 { font-size: 20px; }
 .fz-24 { font-size: 24px; }

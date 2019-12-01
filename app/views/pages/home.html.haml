@@ -7,7 +7,7 @@
       .column.sm-12.lg-3.lg-offset-1(data-aos='fade-right')
         %h2.heading.copy-color.uppercase Howdy
       .column.sm-12.lg-8(data-aos='fade-left')
-        %h2.heading.copy-color.fz-56 The goal is to engage. The challenge is to exceed expectations.
+        %h2.heading.copy-color.fz-56 The goal is to engage. The challenge is to exceed expectations
 
   %section.featured-work
     .row
@@ -17,27 +17,45 @@
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
         = link_to work_path(anchor: 'rocket') do
           = image_tag 'work/my_chevy_is_a_rocket_poster.jpg'
-          %h3.heading.white.vert-center My Chevey is a Rocket
+          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Chevrolet+-+My+Chevy+Is+A+Rocket+.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+          %h3.heading.pt-1
+            .copy-color My Chevy Is A Rocket
+            .accent-color Chevrolet
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
         = link_to work_path(anchor: 'ram') do
           = image_tag 'work/ram_poster.jpg'
-          %h3.heading.white.vert-center Ram
+          .preview= video_tag "https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Ram+Trucks+-+Maxwell's+Pumpkin+Farm.mp4", autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+          %h3.heading.pt-1
+            .copy-color Maxwell's Pumpkin Farm
+            .accent-color Ram Trucks
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
         = link_to work_path(anchor: 'gymboree') do
           = image_tag 'work/gymboree_poster.jpg'
-          %h3.heading.white.vert-center Gymboree
+          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Gymboree+-+Oceaniac+Preservation+Society.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+          %h3.heading.pt-1
+            .copy-color Oceaniac Preservation Society
+            .accent-color Gymboree
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
         = link_to work_path(anchor: 'biolite') do
           = image_tag 'work/biolite_poster.jpg'
-          %h3.heading.white.vert-center Biolite
+          .preview= video_tag "https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/BioLite+-+A+Runner's+Story.mp4", autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+          %h3.heading.pt-1
+            .copy-color A Runner's Story
+            .accent-color BioLite
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
         = link_to work_path(anchor: 'dr-daniels') do
           = image_tag 'work/bcbs_dr_daniels_poster.jpg'
-          %h3.heading.white.vert-center BCBS | Dr. Daniels
+          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/BCBSM+-+Building+Healthy+Communities.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+          %h3.heading.pt-1
+            .copy-color Building Healthy Communities
+            .accent-color BCBSM
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
         = link_to work_path(anchor: 'city-on-a-hill') do
           = image_tag 'work/bcbs_city_on_a_hill_poster.jpg'
-          %h3.heading.white.vert-center BCBS | City on a Hill
+          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/BCBSM+-+City+On+A+Hill.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+          %h3.heading.pt-1
+            .copy-color City On A Hill
+            .accent-color BCBSM
 
   %section.full-page.studio.mt-4.vert-center
     .row
@@ -50,5 +68,5 @@
     .row
       .column.text-center(data-aos='fade-up')
         %h2.heading.white.fz-72 Directors
-        %p.copy.white.fz-24 Meet our team.
+        %p.copy.white.fz-24 Meet our team
         = link_to 'Learn More', directors_path, class: 'btn white mt-2 mb-2'

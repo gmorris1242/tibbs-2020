@@ -4,4 +4,4 @@
 
 :javascript
   $('.video-wrapper').click(function() { $(this).remove() })
-  $('video').click(function(e) { e.stopPropagation() })
+  $('.video-wrapper video').click(function(e) { e.stopPropagation() })
