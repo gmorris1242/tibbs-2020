@@ -5,8 +5,8 @@
         %h1.heading.white= @director.first['name']
 
   %section.content
-    .row.pt-3.pb-3.vert-center
+    .row.pt-3.pb-3
       .column.sm-12.lg-6.pb-1(data-aos='fade-right')
         = image_tag @director.first['img']
       .column.sm-12.lg-6.pb-1(data-aos='fade-left')
-        %p.copy.copy-color.fz-24= @director.first['bio']
+        %p.copy.copy-color.fz-16= @director.first['bio'].html_safe
