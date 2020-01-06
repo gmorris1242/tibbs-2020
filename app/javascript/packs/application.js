@@ -8,6 +8,7 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 require("custom/header")
+require("custom/keepAwake")
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
