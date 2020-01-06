@@ -1,13 +1,13 @@
 #home
   %section.video-section
-    .video= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/videos/reel.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+    .video= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/videos/2019_reel.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
 
   %section.howdy.pt-4.pb-4
     .row
       .column.sm-12.lg-3.lg-offset-1(data-aos='fade-right')
-        %h2.heading.copy-color.uppercase Howdy
+        %h2.heading.copy-color.uppercase.fz-32 Howdy
       .column.sm-12.lg-8(data-aos='fade-left')
-        %h2.heading.copy-color.fz-56 The goal is to engage. The challenge is to exceed expectations
+        %h2.heading.copy-color.fz-56 You've come to the right place - we are a full-thinking production studio
 
   %section.featured-work
     .row
@@ -15,26 +15,12 @@
         %h2.heading.accent-color.fz-32 Featured Work
     .row.mt-3
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
-        = link_to work_path(anchor: 'rocket') do
-          = image_tag 'work/my_chevy_is_a_rocket_poster.jpg'
-          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Chevrolet+-+My+Chevy+Is+A+Rocket+.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
-          %h3.heading.pt-1
-            .copy-color My Chevy Is A Rocket
-            .accent-color Chevrolet
-      .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
         = link_to work_path(anchor: 'ram') do
           = image_tag 'work/ram_poster.jpg'
           .preview= video_tag "https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Ram+Trucks+-+Maxwell's+Pumpkin+Farm.mp4", autoplay: true, loop: true, controls: false, muted: true, playsinline: true
           %h3.heading.pt-1
             .copy-color Maxwell's Pumpkin Farm
             .accent-color Ram Trucks
-      .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
-        = link_to work_path(anchor: 'gymboree') do
-          = image_tag 'work/gymboree_poster.jpg'
-          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Gymboree+-+Oceaniac+Preservation+Society.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
-          %h3.heading.pt-1
-            .copy-color Oceaniac Preservation Society
-            .accent-color Gymboree
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
         = link_to work_path(anchor: 'biolite') do
           = image_tag 'work/biolite_poster.jpg'
@@ -42,26 +28,41 @@
           %h3.heading.pt-1
             .copy-color A Runner's Story
             .accent-color BioLite
-      .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
-        = link_to work_path(anchor: 'dr-daniels') do
-          = image_tag 'work/bcbs_dr_daniels_poster.jpg'
-          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/BCBSM+-+Building+Healthy+Communities.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+      .column.sm-12.md-6.mb-2.poster#bell-tire(data-aos='fade-right')
+        = link_to work_path(anchor: 'bell-tire') do
+          = image_tag 'work/bt_audio_poster.jpg'
+          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Belle+Tire+-+Website+Re-brand.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
           %h3.heading.pt-1
-            .copy-color Building Healthy Communities
-            .accent-color BCBSM
+            .copy-color Website Re-Brand
+            .accent-color Belle Tire
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
-        = link_to work_path(anchor: 'city-on-a-hill') do
-          = image_tag 'work/bcbs_city_on_a_hill_poster.jpg'
-          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/BCBSM+-+City+On+A+Hill.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+        = link_to work_path(anchor: 'rocket') do
+          = image_tag 'work/my_chevy_is_a_rocket_poster.jpg'
+          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Chevrolet+-+My+Chevy+Is+A+Rocket+.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
           %h3.heading.pt-1
-            .copy-color City On A Hill
-            .accent-color BCBSM
+            .copy-color My Chevy Is A Rocket
+            .accent-color Chevrolet
+      .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
+        = link_to work_path(anchor: 'gymboree') do
+          = image_tag 'work/gymboree_poster.jpg'
+          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Gymboree+-+Oceaniac+Preservation+Society.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+          %h3.heading.pt-1
+            .copy-color Oceaniac Preservation Society
+            .accent-color Gymboree
+
+      .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
+        = link_to work_path(anchor: 'minihorse') do
+          = image_tag 'work/mini_horse_poster.jpg'
+          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Minihorse+-+Summer+Itch.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+          %h3.heading.pt-1
+            .copy-colorMini Summer Itch
+            .accent-color Mini Horse
 
   %section.full-page.studio.mt-4.vert-center
     .row
       .column.lg-6.text-center.lg-text-left(data-aos='fade-right')
         %h2.heading.white.fz-72 Studio
-        %p.copy.white.fz-24 The newly renovated 1912 Duffey building offers two full-service edit bays, as well as complete client service provisions. Let Tibbs take your projects from inception all the way through production and editorial - soup-to-nuts as they say!
+        %p.copy.white.fz-24 Welcome to the freshly renovated 1912 Duffey building which offers two full-service edit bays, as well as complete client service provisions. Tibbs will take your project from inception to final delivery – Soup to nuts as they say!
         = link_to 'Learn More', info_path, class: 'btn white mt-2 mb-2'
 
   %section.full-page.directors.vert-center
