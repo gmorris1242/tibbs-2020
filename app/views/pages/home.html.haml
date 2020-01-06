@@ -7,7 +7,7 @@
       .column.sm-12.lg-3.lg-offset-1(data-aos='fade-right')
         %h2.heading.copy-color.uppercase.fz-32 Howdy
       .column.sm-12.lg-8(data-aos='fade-left')
-        %h2.heading.copy-color.fz-56 You've come to the right place - we are a full-thinking production studio
+        %h2.heading.copy-color.fz-56 You've come to the right place. Tibbs is a full-thinking/creating/doing production studio
 
   %section.featured-work
     .row
@@ -21,6 +21,7 @@
           %h3.heading.pt-1
             .copy-color Maxwell's Pumpkin Farm
             .accent-color Ram Trucks
+
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
         = link_to work_path(anchor: 'biolite') do
           = image_tag 'work/biolite_poster.jpg'
@@ -28,6 +29,7 @@
           %h3.heading.pt-1
             .copy-color A Runner's Story
             .accent-color BioLite
+
       .column.sm-12.md-6.mb-2.poster#bell-tire(data-aos='fade-right')
         = link_to work_path(anchor: 'bell-tire') do
           = image_tag 'work/bt_audio_poster.jpg'
@@ -35,28 +37,30 @@
           %h3.heading.pt-1
             .copy-color Website Re-Brand
             .accent-color Belle Tire
+
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
+        = link_to work_path(anchor: 'ram-o-lantern') do
+          = image_tag 'work/ram-o-lantern_poster.jpg'
+          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Ram+Trucks+-+Ram-O-Lantern.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+          %h3.heading.pt-1
+            .copy-color Ram-O-Lantern
+            .accent-color Ram
+
+      .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
         = link_to work_path(anchor: 'rocket') do
           = image_tag 'work/my_chevy_is_a_rocket_poster.jpg'
           .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Chevrolet+-+My+Chevy+Is+A+Rocket+.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
           %h3.heading.pt-1
             .copy-color My Chevy Is A Rocket
             .accent-color Chevrolet
-      .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
-        = link_to work_path(anchor: 'gymboree') do
-          = image_tag 'work/gymboree_poster.jpg'
-          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Gymboree+-+Oceaniac+Preservation+Society.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
-          %h3.heading.pt-1
-            .copy-color Oceaniac Preservation Society
-            .accent-color Gymboree
 
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
-        = link_to work_path(anchor: 'minihorse') do
-          = image_tag 'work/mini_horse_poster.jpg'
-          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Minihorse+-+Summer+Itch.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+        = link_to work_path(anchor: 'pumpkin-wall') do
+          = image_tag 'work/pumpkin_wall_poster.jpg'
+          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Ram+Trucks+-+Pumpkin+Wall+(Time-Lapse).mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
           %h3.heading.pt-1
-            .copy-color Summer Itch
-            .accent-color Mini Horse
+            .copy-color Pumpkin Wall
+            .accent-color Ram
 
   %section.full-page.studio.mt-4.vert-center
     .row
