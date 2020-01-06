@@ -21,7 +21,10 @@
   </head>
 
   <body>
-    <%= render 'layouts/loading_screen'%>
+    <% if request.path == '/' %>
+      <%= render 'layouts/loading_screen'%>
+    <% end %>
+
     <%= render 'layouts/header'%>
     <main>
 
