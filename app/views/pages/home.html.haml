@@ -7,7 +7,7 @@
       .column.sm-12.lg-3.lg-offset-1(data-aos='fade-right')
         %h2.heading.copy-color.uppercase.fz-32 Howdy
       .column.sm-12.lg-8(data-aos='fade-left')
-        %h2.heading.copy-color.fz-56 You've come to the right place. Tibbs is a full-thinking/creating/doing production studio
+        %h2.heading.copy-color.fz-56 You've come to the right place. TIBBS is a Full - Thinking/Creating/DOING Production Studio
 
   %section.featured-work
     .row
@@ -55,12 +55,14 @@
             .accent-color Chevrolet
 
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
-        = link_to work_path(anchor: 'pumpkin-wall') do
-          = image_tag 'work/pumpkin_wall_poster.jpg'
-          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Ram+Trucks+-+Pumpkin+Wall+(Time-Lapse).mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+        = link_to work_path(anchor: 'minihorse') do
+          = image_tag 'work/mini_horse_poster.jpg'
+          .preview= video_tag 'https://tibbs-videos.s3.us-east-2.amazonaws.com/previews/Minihorse+-+Summer+Itch.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
           %h3.heading.pt-1
-            .copy-color Pumpkin Wall
-            .accent-color Ram
+            .copy-color Summer Itch
+            .accent-color Mini Horse
+      .column.text-center
+        %p.mt-2.fz-24= link_to 'See More', work_path, class: 'accent-color uppercase'
 
   %section.full-page.studio.mt-4.vert-center
     .row
