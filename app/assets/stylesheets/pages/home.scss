@@ -15,6 +15,16 @@
     }
   }
 
+  .howdy {
+    .fz-56 {
+      font-size: 36px;
+
+      @media (min-width: 700px) {
+        font-size: 56px;
+      }
+    }
+  }
+
   .featured-work {
     @include work-layout
   }
