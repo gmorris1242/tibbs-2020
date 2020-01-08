@@ -1,5 +1,15 @@
 #info {
   @include page-header;
+
+  .studio {
+    .fz-56 {
+      font-size: 36px;
+
+      @media (min-width: 700px) {
+        font-size: 56px;
+      }
+    }
+  }
 }
 
 #contact {
