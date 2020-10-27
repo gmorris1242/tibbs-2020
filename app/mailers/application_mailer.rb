@@ -8,7 +8,7 @@ class ApplicationMailer < ActionMailer::Base
     opts = {
       subject: 'Contact',
       from: @params[:email],
-      to: 'ryan@tibbsinc.com>'
+      to: ENV['DEFAULT_TO']
     }
 
     mail opts
