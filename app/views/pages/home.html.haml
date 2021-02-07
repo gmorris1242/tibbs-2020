@@ -19,14 +19,22 @@
         %h2.heading.accent-color.fz-32 Featured Work
     .row.mt-3
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
-        = link_to work_path(anchor: 'ram') do
-          = image_tag 'work/ram_poster.jpg'
-          .preview= video_tag "/videos/previews/pumpkin_farm.mp4", autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+        = link_to work_path(anchor: 'tremor') do
+          = image_tag 'work/tremor_poster.png'
+          .preview= video_tag "/videos/previews/tremor.mp4", autoplay: true, loop: true, controls: false, muted: true, playsinline: true
           %h3.heading.pt-1
-            .copy-color Maxwell's Pumpkin Farm
-            .accent-color Ram Trucks
+            .copy-color Tremor
+            .accent-color Ford
 
-      .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
+      .column.sm-12.md-6.mb-2.poster#bell-tire(data-aos='fade-left')
+        = link_to work_path(anchor: 'hennessey_venom') do
+          = image_tag 'work/hennessey_venom_poster.png'
+          .preview= video_tag '/videos/previews/hennessey_venom.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+          %h3.heading.pt-1
+            .copy-color Venom
+            .accent-color Hennessey
+
+      .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
         = link_to work_path(anchor: 'blackkeys') do
           = image_tag 'work/blackkeys_poster.jpg'
           .preview= video_tag '/videos/previews/blackkeys.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
@@ -34,7 +42,23 @@
             .copy-color Go
             .accent-color The Black Keys
 
+      .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
+        = link_to work_path(anchor: 'bcbs_here_for_it_all') do
+          = image_tag 'work/bcbs_here_for_it_all_poster.png'
+          .preview= video_tag '/videos/previews/bcbs_here_for_it_all.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+          %h3.heading.pt-1
+            .copy-color Here For It All
+            .accent-color BCBS
+
       .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
+        = link_to work_path(anchor: 'ford_wi') do
+          = image_tag 'work/ford_wi_poster.png'
+          .preview= video_tag '/videos/previews/ford_wi.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
+          %h3.heading.pt-1
+            .copy-color Amara Ford Women
+            .accent-color Ford
+
+      .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
         = link_to work_path(anchor: 'biolite') do
           = image_tag 'work/biolite_poster.jpg'
           .preview= video_tag "/videos/previews/biolite.mp4", autoplay: true, loop: true, controls: false, muted: true, playsinline: true
@@ -42,29 +66,6 @@
             .copy-color A Runner's Story
             .accent-color BioLite
 
-      .column.sm-12.md-6.mb-2.poster#bell-tire(data-aos='fade-left')
-        = link_to work_path(anchor: 'bell-tire') do
-          = image_tag 'work/bt_audio_poster.jpg'
-          .preview= video_tag '/videos/previews/belle_tire.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
-          %h3.heading.pt-1
-            .copy-color Website Re-Brand
-            .accent-color Belle Tire
-
-      .column.sm-12.md-6.mb-2.poster(data-aos='fade-right')
-        = link_to work_path(anchor: 'ram-o-lantern') do
-          = image_tag 'work/ram-o-lantern_poster.jpg'
-          .preview= video_tag '/videos/previews/ram-o-lantern.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
-          %h3.heading.pt-1
-            .copy-color Ram-O-Lantern
-            .accent-color Ram
-
-      .column.sm-12.md-6.mb-2.poster(data-aos='fade-left')
-        = link_to work_path(anchor: 'minihorse') do
-          = image_tag 'work/mini_horse_poster.jpg'
-          .preview= video_tag '/videos/previews/minihorse.mp4', autoplay: true, loop: true, controls: false, muted: true, playsinline: true
-          %h3.heading.pt-1
-            .copy-color Summer Itch
-            .accent-color Mini Horse
       .column.text-center
         %p.mt-2.fz-24= link_to 'See More', work_path, class: 'accent-color uppercase'
 
